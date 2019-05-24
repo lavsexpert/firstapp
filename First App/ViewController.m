@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
 @end
 
 @implementation ViewController
@@ -19,5 +21,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)onClick:(id)sender {
+    _label.text = @"It worked!";
+}
 
 @end
